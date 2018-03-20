@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- inherit Purchase Config Settings-->
+        <record id="purchase_configs_settings_inherited" model="ir.ui.view">
+            <field name="name">Purchase Config Settings Form</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="purchase.res_config_settings_view_form_purchase"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='po_double_validation']" position="after">
+                    <h2 modifiers="{}">
+                        Direct Purchase Limit
+                    </h2>
+                    <div class="row mt16 o_settings_container" modifiers="{}">
+                        <div class="col-xs-12 col-md-6 o_setting_box" modifiers="{}">
+                            <div class="o_setting_right_pane" modifiers="{}">
+                                <field name="purchase_limit_budget" modifiers="{}"/>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="purchase_order_form_inherited" model="ir.ui.view">
+            <field name="name">Purchase Order Form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Financial Refuse Reason"
+                          attrs="{'invisible': [('state', '=', 'approved')]}">
+                        <field name="refuse_case"/>
+                    </page>
+                </xpath>
+                <xpath expr="//button[@name='button_cancel']" position="replace">
+                    <button name="button_cancel"
+                            states="draft,confirmed,sent,bid,except_picking,except_invoice"
+                            string="Cancel"
+                            type="object"
+                            groups="isky_employee_request.cancel_purchase_order_button"/>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

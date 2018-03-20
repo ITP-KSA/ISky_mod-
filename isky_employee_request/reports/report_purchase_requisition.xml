@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+                id="purchase_requisition_report"
+                model="purchase.requisition"
+                string="Purchase Requisition"
+                report_type="qweb-pdf"
+                name="isky_employee_request.new_report_purchase_requisition"
+                file="isky_employee_request.new_report_purchase_requisition"
+        />
+        <template id="new_report_purchase_requisition">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div class="oe_structure"/>
+
+                            <table style="height: 22px;border: 1px solid black;border-collapse: collapse;" width="645"
+                                   class="col-sm-12 table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th style="text-align: right;" class="col-sm-3">المبررات</th>
+                                        <th style="text-align: right;" class="col-sm-4">المواصفات المطلوبة</th>
+                                        <th style="text-align: right;" class="col-sm-2">الوحدة</th>
+                                        <th style="text-align: right;" class="col-sm-2">الكمية</th>
+                                    </tr>
+                                    <tr t-foreach="o.line_ids" t-as="line">
+                                        <td style="text-align: right;">
+                                            <span t-field="line.justifications"/>
+                                        </td>
+                                        <td style="text-align: right;">
+                                            <span t-field="line.product_id"/>
+                                        </td>
+                                        <td style="text-align: right;">
+                                            <span t-field="line.product_uom_id"/>
+                                        </td>
+                                        <td style="text-align: right;">
+                                            <span t-field="line.product_qty"/>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                <p>
+                                    <span style="text-decoration: underline;text-align: right;">:رئيس الوحدة التنظيمية
+                                    </span>
+                                </p>
+                                <pre style="text-align:right;">الاسم: الوظيفة: التوقيع: التاريخ: / / 14</pre>
+                            </div>
+                            <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                <p>
+                                    <span style="text-decoration: underline;text-align: right;">.ادارة الشؤون الادارية
+                                        /ادارة المستودعات
+                                    </span>
+                                    <span style="text-align: right;">:بعد مراجعة المخزون لدينا تبين عدم توفر ما هو مطلوب
+                                        أعلاه وعلى ذلك جرى التوقيع
+                                    </span>
+                                </p>
+                                <pre style="text-align:right;">الاسم أمين المستودع: التوقيع: التاريخ: / / 14</pre>
+                            </div>
+                            <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                <p>
+                                    <span style="text-decoration: underline;text-align: right;">:موافقة الجهة المختصة (
+                                        أن لزم )
+                                    </span>
+                                </p>
+                                <table style="border:1px solid black" class="col-sm-12 table table-bordered">
+                                    <tr style="text-align: right">
+                                        <th style="text-align: right" class="col-sm-3">الاعتماد</th>
+                                        <th style="text-align: right" class="col-sm-3">التوقيع</th>
+                                        <th style="text-align: right" class="col-sm-3">الاسم</th>
+                                        <th style="text-align: right" class="col-sm-3">الادارة</th>
+                                    </tr>
+                                    <tr style="text-align: right">
+                                        <td class="col-sm-3">
+                                            <pre>يعتمد<input type="checkbox" name="decision" value="approve"/>لا يعتمد
+                                                <input type="checkbox" name="decision" value="no_approve"/>
+                                            </pre>
+                                        </td>
+                                        <td class="col-sm-3"></td>
+                                        <td class="col-sm-3"></td>
+                                        <td class="col-sm-3"></td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                            <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                <table style="border:1px solid black" class=" table table-bordered">
+                                    <tr style="text-align: right">
+                                        <td class="col-sm-3" style="text-align: right">
+                                            :الموظف المختص للمتابعة معه
+                                            <br/>
+                                            :الاسم
+                                            <br/>
+                                            :التوقيع
+                                            <br/>
+                                            :الهاتف
+
+
+                                        </td>
+                                        <td class="col-sm-3">
+
+                                            :عروض الأسعار
+                                            <br/>
+                                            :العرض(1)
+                                            <br/>
+                                            :العرض(2)
+                                            <br/>
+                                            :العرض(3)
+
+                                        </td>
+                                        <td class="col-sm-3">
+
+                                            :أسماء الموردين
+                                            <br/>
+                                            -1
+                                            <br/>
+                                            -2
+                                            <br/>
+                                            -3
+
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                            <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                <p>
+                                    <span style="text-decoration: underline;text-align: right;">:ادارة الشؤون المالية
+                                    </span>
+                                </p>
+                                <pre>مرفق عروض الأسعار
+                                    <input type="checkbox" name="d" value="d"/>
+                                    <br/>حجز الموازنة
+                                    <input type="checkbox" name="m_p" value="m_p"/>
+                                    لا يوجد موازنة
+                                    <input type="checkbox" name="d" value="d"/>
+                                </pre>
+                            </div>
+                            <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                <p>في حال كانت القيمة أكثر من 10,000 يتم ارسالها الى الأمين العام المساعد لمجموعة
+                                    العمليات لاعتمادها
+                                </p>
+                            </div>
+                            <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                <p>
+                                    <span style="text-decoration: underline;text-align: right;">:الامين العام المساعد
+                                        لمجموعة العمليات
+                                    </span>
+                                </p>
+                                <p>
+
+
+                                    أوافق على شراء المطلوب وأفوض قسم المشتريات بتعميد الموردين
+                                    <input type="checkbox" name="price" value="price"/>
+                                </p>
+                                <p>
+                                    عدم الموافقة للأسباب التالية
+                                    <input type="checkbox" name="price" value="price"/>
+                                </p>
+                                <p>
+                                    -أ
+                                </p>
+                                <p>
+                                    -ب
+                                </p>
+
+                            </div>
+                            <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                <p>
+                                    <span style="text-decoration: underline;text-align: right;">:ادارة الشؤون المالية
+                                    </span>
+                                </p>
+                                مرفق عروض الأسعار
+                                <input type="checkbox" name="d" value="d"/>
+                                مرفق طلب سداد
+                                <input type="checkbox" name="m_p" value="m_p"/>
+                                مرفق مطالبة مالية او فاتورة من المورد
+                                <input type="checkbox" name="d" value="d"/>
+                                <p>بناء على اكتمال جميع مستندات المعاملة</p>
+                                تم اصدار الشيك وابلاغ الشئون الادارية
+                                <input type="checkbox" name="d" value="d"/>
+                            </div>
+                            <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                <pre style="text-align:right;">الاسم: التوقيع: التاريخ: / / 14</pre>
+                            </div>
+
+
+                            <div class="oe_structure"/>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

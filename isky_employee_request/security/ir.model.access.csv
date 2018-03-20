@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_emp_request,access emp_request,model_employee_request,,1,1,1,1
+access_hr_department,access hr department,model_hr_department,,1,1,1,1
+access_employee_purchase_requisition_line,access employee purchase requisition line,model_purchase_requisition_line,base.group_user,1,1,1,1
+access_direct_department_manager_stock_picking,access direct department stock picking,model_stock_picking,isky_employee_request.group_direct_departmental_employee,1,1,1,1
+access_direct_department_manager_purchase_requisition_line,access direct departmeent manager purchase requisition line,model_purchase_requisition_line,isky_employee_request.group_direct_departmental_employee,1,1,1,1
+access_group_general_manager_employee_stock_picking,access group general manager employee stock picking,model_stock_picking,isky_employee_request.group_general_manager_employee,1,1,1,1
+access_group_general_manager_employee_purchase_requisition_line,access group general manager employee purchase requisition line,model_purchase_requisition_line,isky_employee_request.group_general_manager_employee,1,1,1,1
+
+access_stock_move_employee, access stock move employee,purchase.model_stock_move,hr.group_hr_user,1,0,0,0
+access_stock_move_employee, access stock move employee,purchase.model_stock_move,hr.group_hr_manager,1,0,0,0
+access_stock_move_employee, access stock move employee,purchase.model_stock_move,hr.group_hr_user,1,0,0,0
+access_res_partner_employee, access res partner employee,base.model_res_partner,,1,1,1,1
+access_stock_picking,access stock picking,model_stock_picking,,1,1,1,1

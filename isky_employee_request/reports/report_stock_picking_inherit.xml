@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="stock.report_picking">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                <pre>مطبوعات
+                                    <t t-if="o.type == 'm'">
+                                        <input type="checkbox" name="m" value="m" checked="1"/>
+                                    </t>
+                                    مواد غذائية
+                                    <t t-if="o.type == 'fm'">
+                                        <input type="checkbox" name="m_f" value="m_q" checked="1"/>
+                                    </t>
+                                    سقيا
+                                    <t t-if="o.type == 's'">
+                                        <input type="checkbox" name="m_e" checked="1"/>
+                                    </t>
+                                    اصول
+                                    <t t-if="o.type == 's'">
+                                        <input type="checkbox" name="m_f" value="m_a" checked="o.type == 'a'"/>
+                                    </t>
+                                    اخرى
+                                    <t t-if="o.type == 'other'">
+                                        <input type="checkbox" name="m_f" value="m_s" checked="o.type == 'other'"/>
+                                    </t>
+                                </pre>
+
+                            </div>
+                            <tr t-foreach="o.move_lines" t-as="line">
+
+
+                                <table style="height: 22px;border: 1px solid black;border-collapse: collapse;"
+                                       width="645" class="col-sm-12 table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="text-align: right;" class="col-sm-3">الصنف</th>
+                                            <th style="text-align: right;" class="col-sm-2">الكمية</th>
+                                        </tr>
+                                        <tr t-foreach="o.move_lines" t-as="line">
+                                            <td style="text-align: right;">
+                                                <span t-field="line.product_id"/>
+                                            </td>
+
+                                            <td style="text-align: right;">
+                                                <span t-field="line.product_qty"/>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                    <p>
+                                        <span style="text-decoration: underline;text-align: right;">:الموظف المسؤول في
+                                            الوحدة التنظيمية
+                                        </span>
+                                    </p>
+                                    <pre style="text-align:right;">الاسم: التوقيع: التاريخ: / / 14</pre>
+                                </div>
+                                <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                    <p>
+                                        <span style="text-decoration: underline;text-align: right;"></span>
+                                    </p>
+                                    <pre style="text-align:right;">الاسم: التوقيع: التاريخ: / / 14</pre>
+                                </div>
+                                <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                    <p>
+                                        <span style="text-decoration: underline;text-align: right;">:ادارة الشؤون
+                                            الادارية /ادارة المستودعات
+                                        </span>
+                                    </p>
+                                    <pre>بعد مراجعة المخزون لدينا تبين عدم توفر ما هو مطلوب أعلاه وعلى ذلك جرى التوقيع
+                                        <input type="checkbox" name="d" value="d"/>
+                                        <br/>
+                                        بعد مراجعة المخزون تم صرف المطلوب أعلاه وعلى ذلك جرى التوقيع
+                                        <input type="checkbox" name="m_p" value="m_p"/>
+                                    </pre>
+                                    <pre style="text-align:right;">اسم أمين المستودع: التوقيع: التاريخ: / / 14</pre>
+                                </div>
+                                <div style="text-align: right;border: 2px solid black" class="col-sm-12">
+                                    <p>
+                                        <span style="text-decoration: underline;text-align: right;">:الاستلام</span>
+                                    </p>
+                                    <p>-:الموظف</p>
+                                    <pre style="text-align:right;">اسم أمين المستودع: التوقيع: التاريخ: / / 14</pre>
+                                </div>
+                            </tr>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

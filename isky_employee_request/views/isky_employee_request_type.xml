@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--employee request Type form view-->
+        <record model="ir.ui.view" id="emp_request_type_form_view">
+            <field name="name">Employee Request Type Form View</field>
+            <field name="model">employee.request.type</field>
+            <field name="arch" type="xml">
+                <form string="Employee Request Type">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="purchase_employee_request_menuitem"
+                  name="Employee Request"
+                  parent="purchase.menu_purchase_root"
+                  sequence="2"/>
+
+
+
+        <menuitem id="sub_purchase_employee_request_menuitem"
+                  name="Requests"
+                  parent="purchase_employee_request_menuitem"
+                  action="isky_purchase_employee_request_action"/>
+
+
+        <menuitem id="employee_request_type_menuitem"
+                  name="Employee Request Type"
+                  parent="hr.menu_human_resources_configuration"
+                  action="isky_purchase_employee_request_type_action"/>
+
+    </data>
+</odoo>
+

@@ -1,0 +1,1077 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* isky_employee_request
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-04 10:18+0000\n"
+"PO-Revision-Date: 2017-06-04 12:45+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: ar\n"
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ".ادارة الشؤون الادارية /ادارة المستودعات"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":أسماء الموردين"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":ادارة الشؤون المالية"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":الاسم"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":الامين العام المساعد لمجموعة العمليات"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":التوقيع"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":العرض(1)"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":العرض(2)"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":العرض(3)"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":الموظف المختص للمتابعة معه"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":الهاتف"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ""
+":بعد مراجعة المخزون لدينا تبين عدم توفر ما هو مطلوب أعلاه وعلى ذلك جرى "
+"التوقيع"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":رئيس الوحدة التنظيمية"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":عروض الأسعار"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ":موافقة الجهة المختصة ( أن لزم )"
+msgstr ""
+
+#. module: isky_employee_request
+#: field:hr.department,administrative_dep:0
+msgid "Administrative Affairs Department"
+msgstr "قسم الشئون الادارية"
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+msgid "Administrative Approve"
+msgstr "موافقة الشئون الادارية"
+
+#. module: isky_employee_request
+#: selection:employee.request,state:0
+msgid "Administrative Approved"
+msgstr "موافقة الشئون الادارية"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_order_inherit.py:46
+#, python-format
+msgid ""
+"Amount total is greater than 10000 so your ROQ must relate to Call of bids"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+msgid "Approve"
+msgstr "موافقة"
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Approved by Supplier"
+msgstr "مقبولة من المورد"
+
+#. module: isky_employee_request
+#: view:purchase.order:isky_employee_request.purchase_order_form_inherited
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Cancel Call"
+msgstr "إلغاء المناقصة"
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Cancel Purchase Order"
+msgstr "إلغي امر الشراء"
+
+#. module: isky_employee_request
+#: field:employee.request,company_id:0
+msgid "Company"
+msgstr "شركة"
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+msgid "Competent Approve"
+msgstr "موافقة الادارة المختصة"
+
+#. module: isky_employee_request
+#: field:employee.request,is_need_competent_approve:0
+msgid "Competent Department Approve"
+msgstr "موافقة الادارة المختصة"
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Confirm Call"
+msgstr "تأكيد المناقصة"
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Confirm Purchase Order"
+msgstr "أكد امر الشراء"
+
+#. module: isky_employee_request
+#: field:employee.request,create_uid:0
+msgid "Created by"
+msgstr "أُنشئ بواسطة"
+
+#. module: isky_employee_request
+#: field:employee.request,create_date:0
+msgid "Created on"
+msgstr "إنشاؤه في"
+
+#. module: isky_employee_request
+#: help:employee.request,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr "تاريخ آخر رسالة نُشرت لهذا البند"
+
+#. module: isky_employee_request
+#: field:purchase.requisition.line,department_id:0
+msgid "Department"
+msgstr "الإدارة"
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.group_gm
+msgid "Department Manager"
+msgstr "مدير الإدارة"
+
+#. module: isky_employee_request
+#: field:purchase.requisition,department_id:0
+msgid "Department Requested"
+msgstr "الإدارة الطالبة"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:228
+#, python-format
+msgid "Department has no location!!"
+msgstr "القسم لا يحتوى الموقع!!"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:226
+#, python-format
+msgid "Department of Responsible has no location !!!"
+msgstr "عفوا ! القسم المرتبط بالموظف لا يحتوى على موقع داخلى فى المخزن"
+
+#. module: isky_employee_request
+#: field:employee.request,departmental_manager_id:0
+msgid "Departmental Manager"
+msgstr "مدير الإدارة"
+
+#. module: isky_employee_request
+#: field:purchase.requisition.line,description:0
+msgid "Description"
+msgstr "الوصف"
+
+#. module: isky_employee_request
+#: field:employee.request,direct_manager_id:0
+#: model:res.groups,name:isky_employee_request.group_sm
+msgid "Direct Manager"
+msgstr "المدير المباشر"
+
+#. module: isky_employee_request
+#: selection:employee.request,state:0
+msgid "Direct/Department Approved"
+msgstr "موافقة المدير المباشر/الإدارة"
+
+#. module: isky_employee_request
+#: field:employee.request,display_name:0
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+#: selection:employee.request,state:0
+msgid "Done"
+msgstr "تم"
+
+#. module: isky_employee_request
+#: selection:employee.request,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: isky_employee_request
+#: model:ir.model,name:isky_employee_request.model_employee_request
+msgid "Email Thread"
+msgstr "المحادثة البريدية"
+
+#. module: isky_employee_request
+#: model:ir.model,name:isky_employee_request.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+#: model:ir.actions.act_window,name:isky_employee_request.purchase_employee_request_action
+#: model:ir.ui.menu,name:isky_employee_request.purchase_emp_request_menuitem
+#: model:ir.ui.menu,name:isky_employee_request.purchase_employee_request_menuitem
+#: field:purchase.requisition,employee_request_id:0
+#: field:stock.picking,emp_request_id:0
+msgid "Employee Request"
+msgstr "طلب مواد"
+
+#. module: isky_employee_request
+#: field:purchase.requisition,estimated_budget:0
+msgid "Estimated budget"
+msgstr "الموازنة المقترحة"
+
+#. module: isky_employee_request
+#: field:employee.request,message_follower_ids:0
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: isky_employee_request
+#: help:employee.request,message_summary:0
+msgid ""
+"Holds the Chatter summary (number of messages, ...). This summary is "
+"directly in html format in order to be inserted in kanban views."
+msgstr ""
+"يحمل ملخص المشارك (عدد الرسائل، ...). هذا ملخص مباشرة بتنسيق HTML من أجل "
+"إدراجها في عروض كانبان."
+
+#. module: isky_employee_request
+#: field:employee.request,id:0
+msgid "ID"
+msgstr "المعرّف"
+
+#. module: isky_employee_request
+#: help:employee.request,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr "عند التفعيل، يجب الانتباه الى الرسائل الجديدة"
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_tree_view
+msgid "Invoice"
+msgstr ""
+
+#. module: isky_employee_request
+#: field:employee.request,message_is_follower:0
+msgid "Is a Follower"
+msgstr "متابع"
+
+#. module: isky_employee_request
+#: field:purchase.requisition.line,justifications:0
+msgid "Justifications"
+msgstr "المبررات"
+
+#. module: isky_employee_request
+#: field:employee.request,message_last_post:0
+msgid "Last Message Date"
+msgstr "تاريخ آخر رسالة"
+
+#. module: isky_employee_request
+#: field:employee.request,__last_update:0
+msgid "Last Modified on"
+msgstr "اخر تعديل"
+
+#. module: isky_employee_request
+#: field:employee.request,write_uid:0
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: isky_employee_request
+#: field:employee.request,write_date:0
+msgid "Last Updated on"
+msgstr "آخر تحديث فى"
+
+#. module: isky_employee_request
+#: field:employee.request,line_ids:0
+msgid "Lines"
+msgstr ""
+
+#. module: isky_employee_request
+#: field:hr.department,location_id:0
+msgid "Location"
+msgstr "المكان"
+
+#. module: isky_employee_request
+#: field:employee.request,message_ids:0
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: isky_employee_request
+#: help:employee.request,message_ids:0
+msgid "Messages and communication history"
+msgstr "الرسائل و سجل التواصل"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:240
+#: code:addons/isky_employee_request/models/employee_request.py:280
+#, python-format
+msgid "Only Administrative Affairs manager can approve request"
+msgstr "فقط مدير الشئون الإدارية يمكن الموافقة"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:368
+#, python-format
+msgid "Only Administrative Affairs manager can edit this field"
+msgstr "فقط مدير الشئون الإدارية يمكنه تعديل"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:257
+#: code:addons/isky_employee_request/models/employee_request.py:262
+#, python-format
+msgid "Only Competent department manager can approve the request"
+msgstr "فقط مدير الادارة المختصة يمكن الموافقة"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_requisition_line_inherit.py:49
+#: code:addons/isky_employee_request/models/purchase_requisition_line_inherit.py:55
+#, python-format
+msgid "Only Competent department manager can edit description of product"
+msgstr "فقط مدير الشئون المختصة يمكنه تعديل الوصف"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:134
+#: code:addons/isky_employee_request/models/employee_request.py:143
+#: code:addons/isky_employee_request/models/employee_request.py:150
+#: code:addons/isky_employee_request/models/employee_request.py:156
+#: code:addons/isky_employee_request/models/employee_request.py:165
+#: code:addons/isky_employee_request/models/employee_request.py:304
+#, python-format
+msgid "Only Employee's Direct or Department Manager can approve!"
+msgstr "فقط المدير المباشر/الوحدة الإدارية للموظف يمكنه الموافقة"
+
+#. module: isky_employee_request
+#: selection:employee.request,state:0
+msgid "Open"
+msgstr "مُسجل"
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Order Date"
+msgstr "تاريخ الأمر"
+
+#. module: isky_employee_request
+#: model:ir.model,name:isky_employee_request.model_stock_picking
+msgid "Picking List"
+msgstr "قائمة الالتقاط"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:92
+#, python-format
+msgid "Please create some Product lines."
+msgstr "يرجى إدخال المنتجات"
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Products"
+msgstr "المنتجات"
+
+#. module: isky_employee_request
+#: model:ir.model,name:isky_employee_request.model_purchase_order
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Purchase Order"
+msgstr "أمر الشراء"
+
+#. module: isky_employee_request
+#: model:ir.actions.report.xml,name:isky_employee_request.purchase_requisition_report
+#: model:ir.model,name:isky_employee_request.model_purchase_requisition
+msgid "Purchase Requisition"
+msgstr "طلب شراء"
+
+#. module: isky_employee_request
+#: model:ir.model,name:isky_employee_request.model_purchase_requisition_line
+msgid "Purchase Requisition Line"
+msgstr "خط طلب المبيعات"
+
+#. module: isky_employee_request
+#: field:purchase.requisition.line,purchase_emp_request_id:0
+msgid "Purchase emp request id"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Reference"
+msgstr "مرجع"
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+#: selection:employee.request,state:0
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+#: view:purchase.order:isky_employee_request.purchase_order_form_inherited
+#: field:purchase.order,refuse_reason:0
+msgid "Refuse Reason"
+msgstr "مبررات الرفض"
+
+#. module: isky_employee_request
+#: field:employee.request,refuse_reason:0
+msgid "Refuse reason"
+msgstr "مبررات الرفض"
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Request a Quotation"
+msgstr "طلب تسعيرة"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_requisition_inherit.py:52
+#: code:addons/isky_employee_request/models/purchase_requisition_inherit.py:56
+#: code:addons/isky_employee_request/models/purchase_requisition_inherit.py:58
+#, python-format
+msgid "Request of Quotation must be more than 3"
+msgstr ""
+
+#. module: isky_employee_request
+#: model:ir.ui.menu,name:isky_employee_request.sub_purchase_emp_request_menuitem
+#: model:ir.ui.menu,name:isky_employee_request.sub_purchase_employee_request_menuitem
+msgid "Requests"
+msgstr "طلبات"
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Requests for Quotation"
+msgstr "طلبات التسعير"
+
+#. module: isky_employee_request
+#: field:employee.request,employee_id:0
+msgid "Responsible"
+msgstr "مسؤول"
+
+#. module: isky_employee_request
+#: field:employee.request,schedule_date:0
+msgid "Scheduled Date"
+msgstr "تاريخ مجدول"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:71
+#: code:addons/isky_employee_request/models/employee_request.py:333
+#: code:addons/isky_employee_request/models/employee_request.py:360
+#, python-format
+msgid "Scheduled Date must be greater than or equal ordering date"
+msgstr ""
+
+#. module: isky_employee_request
+#: field:employee.request,ordering_date:0
+msgid "Scheduled Ordering Date"
+msgstr "تاريخ الطلب"
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Send RFQ by Email"
+msgstr " إرسال RFQ بالبريد"
+
+#. module: isky_employee_request
+#: field:employee.request,name:0
+msgid "Sequence"
+msgstr "مسلسل"
+
+#. module: isky_employee_request
+#: field:employee.request,competent_department_id:0
+msgid "Specialist Department"
+msgstr "الادارة المختصة"
+
+#. module: isky_employee_request
+#: field:employee.request,state:0
+msgid "Status"
+msgstr "الحالة"
+
+#. module: isky_employee_request
+#: model:ir.model,name:isky_employee_request.model_stock_move
+msgid "Stock Move"
+msgstr "حركة مخزن"
+
+#. module: isky_employee_request
+#: field:purchase.requisition.line,stock_picking_type_id:0
+msgid "Stock Picking Type"
+msgstr "نوع حركة المخزن"
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Submit"
+msgstr "تسجيل"
+
+#. module: isky_employee_request
+#: field:employee.request,message_summary:0
+msgid "Summary"
+msgstr "ملخص"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:248
+#: code:addons/isky_employee_request/models/employee_request.py:287
+#, python-format
+msgid "System doesn't contain Administrative Affairs to approve request"
+msgstr "عفوا لا يحتوى على قسم خاص بالشئون الإدارية"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:121
+#, python-format
+msgid "System doesn't contain administrative department"
+msgstr "عفوا لا يحتوى على قسم خاص بالشئون الإدارية"
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Terms and Conditions"
+msgstr "الشروط و الأحكام"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/hr_department_inherit.py:17
+#: code:addons/isky_employee_request/models/hr_department_inherit.py:24
+#, python-format
+msgid "The system contains only one administrative Affairs."
+msgstr "عفوا يوجد قسم ادارى "
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/hr_employee_inherit.py:12
+#: code:addons/isky_employee_request/models/hr_employee_inherit.py:19
+#, python-format
+msgid "There is another employee related to this user"
+msgstr "هناك موظف اخر مرتبط بهذا المستخدم"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:102
+#, python-format
+msgid "This user not related with employee"
+msgstr "هذا المستخدم غير مرتبط بموظف"
+
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+#: field:employee.request,transfer_ids:0
+msgid "Transfers"
+msgstr "تحويلات"
+
+#. module: isky_employee_request
+#: field:stock.move,type:0 field:stock.picking,type:0
+msgid "Type"
+msgstr "النوع"
+
+#. module: isky_employee_request
+#: field:employee.request,message_unread:0
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: isky_employee_request
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "View RFQs/Bids"
+msgstr "عرض العطاءات/العروض"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_requisition_line_inherit.py:37
+#, python-format
+msgid "You can only add new item in draft state"
+msgstr "لا يمكن اضافة عنصر جديد فى هذه المرحلة"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_requisition_line_inherit.py:53
+#, python-format
+msgid "You can only edit description of item in draft state"
+msgstr "لا تستطيع الا تغير الوصف"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_requisition_line_inherit.py:57
+#, python-format
+msgid "You can only edit item in draft state"
+msgstr "لا يمكن تعديل طلب الشراء الا فى مرحلة المسودة"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:326
+#, python-format
+msgid "You can't delete approved requests"
+msgstr "لا يمكن مسح طلب تم الموافقة عليه"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_requisition_inherit.py:61
+#, python-format
+msgid "You must enter estimated budget"
+msgstr "عفوا يجب ادخال قيمة الميزانية"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:364
+#: code:addons/isky_employee_request/models/purchase_order_inherit.py:15
+#, python-format
+msgid "You must enter the refuse reason"
+msgstr "لا بد من وضع مبررات الرفض"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:33
+#, python-format
+msgid "department of managment has no location!!!"
+msgstr "القسم الإدارى لا يحتوى على موقع"
+
+#. module: isky_employee_request
+#: field:employee.request,is_confirmed:0
+msgid "is_confirmed"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:purchase.order:isky_employee_request.purchase_order_form_inherited
+msgid "isky_employee_request.purchase_manager_responsive_employee"
+msgstr ""
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_requisition_line_inherit.py:30
+#, python-format
+msgid "location of department should be internal!!"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "أوافق على شراء المطلوب وأفوض قسم المشتريات بتعميد الموردين"
+msgstr ""
+
+#. module: isky_employee_request
+#: selection:stock.move,type:0 selection:stock.picking,type:0
+msgid "اخرى"
+msgstr ""
+
+#. module: isky_employee_request
+#: selection:stock.move,type:0 selection:stock.picking,type:0
+msgid "اصول"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "الادارة"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "الاسم"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ""
+"الاسم أمين المستودع:                   التوقيع:                    "
+"التاريخ:  /  /  14"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ""
+"الاسم:                         التوقيع:                  التاريخ:  / /  14"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ""
+"الاسم:                   الوظيفة:                 التوقيع:                  "
+"التاريخ:  / /  14"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "الاعتماد"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "التوقيع"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "الكمية"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "المبررات"
+msgstr ""
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.purchase_manager_responsive_employee
+msgid "المدير المالى"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "المواصفات المطلوبة"
+msgstr ""
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.group_employee
+msgid "الموظف"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "الوحدة"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "بناء على اكتمال جميع مستندات المعاملة"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "تم اصدار الشيك وابلاغ الشئون الادارية"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "حجز الموازنة"
+msgstr ""
+
+#. module: isky_employee_request
+#: selection:stock.move,type:0 selection:stock.picking,type:0
+msgid "سقيا"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "عدم الموافقة للأسباب التالية"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid ""
+"في حال كانت القيمة أكثر من 10,000 يتم ارسالها الى الأمين العام المساعد "
+"لمجموعة العمليات لاعتمادها"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "لا يعتمد"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "لا يوجد موازنة"
+msgstr ""
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.group_general_manager_employee
+msgid "مدير الشؤون الادارية"
+msgstr ""
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.group_direct_departmental_employee
+msgid "مدير الوحدة الادارية"
+msgstr ""
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.purchase_unit_responsive_employee
+msgid "مدير الوحدة المختصة"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "مرفق طلب سداد"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "مرفق عروض الأسعار"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "مرفق مطالبة مالية او فاتورة من المورد"
+msgstr ""
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.inventory_responsive_employee
+msgid "مسؤول المخزون"
+msgstr ""
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.purchase_responsive_employee
+msgid "مسؤول المشتريات"
+msgstr ""
+
+#. module: isky_employee_request
+#: selection:stock.move,type:0 selection:stock.picking,type:0
+msgid "مطبوعات"
+msgstr ""
+
+#. module: isky_employee_request
+#: selection:stock.move,type:0 selection:stock.picking,type:0
+msgid "مواد غذائية"
+msgstr ""
+
+#. module: isky_employee_request
+#: view:website:isky_employee_request.new_report_purchase_requisition
+msgid "يعتمد"
+msgstr ""
+
+#. module: isky_employee_request
+#: selection:stock.picking,type:0
+msgid "foodstuffs"
+msgstr "مواد غذائية"
+
+#. module: isky_employee_request
+#: selection:stock.picking,type:0
+msgid "Publications"
+msgstr "مطبوعات"
+
+#. module: isky_employee_request
+#: selection:stock.picking,type:0
+msgid "Watering"
+msgstr "سقيا"
+
+#. module: isky_employee_request
+#: selection:stock.picking,type:0
+msgid "Origins"
+msgstr "اصول"
+
+#. module: isky_employee_request
+#: selection:stock.picking,type:0
+msgid "Other"
+msgstr "اخرى"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:112
+#, python-format
+msgid "There is employee request that needs to approve"
+msgstr "هناك طلب شراء يحتاج الى موافقة"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:111
+#: view:employee.request:isky_employee_request.emp_request_form_view
+#: model:ir.actions.act_window,name:isky_employee_request.purchase_employee_request_action
+#: model:ir.ui.menu,name:isky_employee_request.purchase_emp_request_menuitem
+#: model:ir.ui.menu,name:isky_employee_request.purchase_employee_request_menuitem
+#: field:purchase.requisition,employee_request_id:0
+#: field:stock.picking,emp_request_id:0
+#, python-format
+msgid "Employee Request"
+msgstr "طلب شراء"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:300
+#, python-format
+msgid "Your request was approved"
+msgstr "لقد تم قبول طلبك"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:333
+#, python-format
+msgid "Your request was refused"
+msgstr "لقد تم رفض طلبك"
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+msgid "Submit"
+msgstr "ارسل"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_requisition_inherit.py:14
+#, python-format
+msgid "Submitted"
+msgstr "ارسل"
+
+#. module: isky_employee_request
+#: view:employee.request:isky_employee_request.emp_request_form_view
+#: view:purchase.requisition:isky_employee_request.view_purchase_requisition_form_inherited
+#: selection:purchase.requisition,state:0
+msgid "Submitted"
+msgstr "ارسل"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:333
+#, python-format
+msgid "Your request was approved"
+msgstr "تم الموافقة على طلبك"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:277
+#, python-format
+msgid "Your request was approved by administrative manager"
+msgstr "تم الموافقة على طلبك من المدير الادارى"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:168
+#, python-format
+msgid "Your request was approved by your manager"
+msgstr "تم الموافقة على طلبك من مديرك"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:237
+#, python-format
+msgid "Your request was finally approved"
+msgstr "تم الموافقة النهائية على طلبك"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:97
+#: code:addons/isky_employee_request/models/employee_request.py:153
+#: code:addons/isky_employee_request/models/employee_request.py:164
+#: code:addons/isky_employee_request/models/employee_request.py:232
+#: code:addons/isky_employee_request/models/employee_request.py:261
+#: code:addons/isky_employee_request/models/employee_request.py:272
+#: code:addons/isky_employee_request/models/employee_request.py:328
+#: code:addons/isky_employee_request/models/employee_request.py:360
+#: view:employee.request:isky_employee_request.emp_request_form_view
+#: model:ir.actions.act_window,name:isky_employee_request.isky_purchase_employee_request_action
+#: model:ir.ui.menu,name:isky_employee_request.purchase_emp_request_menuitem
+#: model:ir.ui.menu,name:isky_employee_request.purchase_employee_request_menuitem
+#: field:purchase.requisition,employee_request_id:0
+#: field:stock.picking,emp_request_id:0
+#, python-format
+msgid "Employee Request"
+msgstr "طلب شراء"
+
+#. module: isky_employee_request
+#: field:purchase.requisition.line,specification:0
+msgid "Specification"
+msgstr "المواصفات الفنية"
+
+#. module: isky_employee_request
+#: field:purchase.requisition,is_employee_required:0
+msgid "Contain Request"
+msgstr "يحتوى على طلبات"
+
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.group_direct_departmental_employee
+msgid "Direct / Departmental  Manager"
+msgstr "مدير الوحدة الادارية"
+
+
+#. module: isky_employee_request
+#: model:ir.model,name:isky_employee_request.model_hr_employee
+#: model:res.groups,name:isky_employee_request.group_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.purchase_responsive_employee
+msgid "Purchase Response"
+msgstr "مسؤول المشتريات"
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.inventory_responsive_employee
+msgid "Inventory Responsive"
+msgstr "مسؤول المخزون"
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.group_general_manager_employee
+msgid "Administrative Manager"
+msgstr "مدير الشئون الادارية"
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.purchase_unit_responsive_employee
+msgid "Purchase Unit Responsive"
+msgstr "مدير الوحدة المختصة"
+
+#. module: isky_employee_request
+#: model:res.groups,name:isky_employee_request.purchase_manager_responsive_employee
+msgid "Purchase Manager Responsive"
+msgstr "المدير المالى"
+
+
+#. module: isky_employee_request
+#: view:purchase.config.settings:isky_employee_request.purchase_configs_settings_inherited
+msgid "Direct Purchase Limit"
+msgstr "حد الشراء المباشر"
+
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_order_inherit.py:45
+#, python-format
+msgid " so your ROQ must relate to Call of bids"
+msgstr "لذلك ينبغى ربطه بمناقصة "
+
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_order_inherit.py:45
+#, python-format
+msgid "Amount total is greater than "
+msgstr " اجمالى السعر اكبر من "
+
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:352
+#: code:addons/isky_employee_request/models/employee_request.py:367
+#: code:addons/isky_employee_request/models/employee_request.py:422
+#, python-format
+msgid "Only Employee's Direct or Department Manager can refuse request!"
+msgstr "عفوا لا يمكنك رفض طلب الشراء فقط المدير المباشر او مدير القسم او مدير الوحدة الادارية  هو القادر على رفض الطلب"
+
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:71
+#: code:addons/isky_employee_request/models/employee_request.py:383
+#: code:addons/isky_employee_request/models/employee_request.py:411
+#, python-format
+msgid "Scheduled Date must be greater than or equal ordering date"
+msgstr "تاريخ المجدول لا ينبغى ان يكون اقل من تاريخ الطلب"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/purchase_requisition_line_inherit.py:55
+#, python-format
+msgid "Only Competent department manager can edit product line"
+msgstr "عفوا فقط مدير الوحدة المختصة قادر على تغير المنتجات"
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:260
+#: code:addons/isky_employee_request/models/purchase_requisition_line_inherit.py:65
+#, python-format
+msgid "Pleaze enter stock picking type"
+msgstr "عفوا ينبغى ادخال نوع حركة المخزون"
+
+
+#. module: isky_employee_request
+#: code:addons/isky_employee_request/models/employee_request.py:277
+#: code:addons/isky_employee_request/models/employee_request.py:305
+#, python-format
+msgid "Please enter product"
+msgstr "عفوا ينبغى تحديد المنتج"
+
+#. module: isky_employee_request
+#: selection:employee.request,state:0
+msgid "Final Done"
+msgstr "النهائية"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="isky_sale_order_inherit" model="ir.ui.view">
+            <field name="name">isky.sale.order.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <field name="special_sale" attrs="{'readonly': [('state', 'not in', ['draft','sent'])]}"/>
+                    <field name="project_id"
+                           attrs="{'invisible':[('special_sale', '=', False)], 'readonly': [('state', 'not in', ['draft','sent'])]}"/>
+                </xpath>
+
+                <xpath expr="//field[@name='order_line']/tree/field[@name='name']" position="after">
+                    <field name="special_sale" invisible="1"/>
+                    <field name="contact_info" attrs="{'invisible':[('special_sale', '=', False)]}"/>
+                    <field name="badge_number" attrs="{'invisible':[('special_sale', '=', False)]}"/>
+                </xpath>
+                
+                <xpath expr="//field[@name='payment_term_id']" position="after">
+                    <field name="client_po" attrs="{'readonly': [('state', 'not in', ['draft','sent'])]}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

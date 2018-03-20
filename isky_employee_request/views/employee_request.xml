@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--employee request form view-->
+        <record model="ir.ui.view" id="emp_request_form_view">
+            <field name="name">Employee Request Form View</field>
+            <field name="model">employee.request</field>
+            <field name="arch" type="xml">
+                <form string="Employee Request">
+                    <header>
+                        <button name="action_submit" class="oe_highlight"
+                                type="object"
+                                string="Submit"
+                                states="draft"/>
+
+                        <button name="action_confirm_dm" class="oe_highlight"
+                                type="object"
+                                string="Approve"
+                                states="open"
+                        />
+
+                        <button name="action_confirm_gm" class="oe_highlight"
+                                type="object"
+                                string="Approve"
+                                states="dm_approve"
+                                groups="isky_purchase_customizations.isky_general_manager_group"
+                        />
+
+                        <button name="action_confirm_competent" class="oe_highlight"
+                                type="object"
+                                string="Competent Approve"
+                                states="admin_approve"
+                                attrs="{'invisible': ['|',('state', '!=', 'admin_approve'),('request_type', '!=', 'others')]}"/>
+
+
+                        <button name="action_confirm_done" class="oe_highlight"
+                                type="object"
+                                string="Administrative Approve"
+                                attrs="{'invisible': ['|',('state', '!=', 'sm_approve'),('request_type', '!=', 'others')]}"/>
+
+                        <button name="action_confirm_done" class="oe_highlight"
+                                type="object"
+                                string="Done"
+                                attrs="{'invisible': ['|',('state', '=', 'gm_approve'),('request_type', '!=', 'others')]}"
+                                groups="isky_purchase_customizations.isky_general_manager_group"
+                        />
+
+                        <button name="action_confirm_administrative" class="oe_highlight"
+                                type="object"
+                                string="Approve"
+                                attrs="{'invisible': ['|',('state', '!=', 'sm_approve'),('request_type', '!=', 'sample')]}"/>
+
+
+                        <button name="action_refuse" class="oe_highlight"
+                                type="object"
+                                string="Refuse"
+                                states="open,sm_approve,dm_approve"
+                        />
+
+
+                        <field name="state"
+                               widget="statusbar"
+                               statusbar_visible="draft,open,sm_approve,admin_approve,done,final_done"
+                               readonly="1"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"
+                                       attrs="{'readonly': [('state', '!=', 'draft')], 'invisible': [('state', '=', 'draft')]}"/>
+                                <field name="employee_id"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="competent_department_id"
+                                       attrs="{'readonly': [('state', '!=', 'draft')], 'required': 1}"/>
+                                <field name="request_type"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="ordering_date"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="schedule_date"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="employee_request_type_id"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="is_need_competent_approve"
+                                       attrs="{'invisible': [('state', '!=', 'sm_approve')]}"/>
+
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Products">
+                                <field name="line_ids"
+                                       attrs="{'readonly': ['|', ('state', '=', 'done'), ('state', '=', 'refuse')]}">
+                                    <tree string="Products" editable="bottom">
+                                        <field name="product_id"/>
+                                        <field name="description" required="1"/>
+                                        <field name="specification"/>
+                                        <field name="product_uom_id"/>
+                                        <field name="product_qty"/>
+                                        <field name="justifications"/>
+                                        <field name="stock_picking_type_id"
+                                               groups="isky_employee_request.group_direct_departmental_employee"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Transfers"
+                                  attrs="{'readonly': [('state', '=', 'open')]}">
+                                <field name="transfer_ids">
+                                    <tree string="Transfers">
+                                        <field name="name"/>
+                                        <field name="location_id"/>
+                                        <field name="location_dest_id"/>
+                                        <field name="move_type"/>
+                                        <field name="state"/>
+                                        <field name="emp_request_id"/>
+                                        <field name="partner_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+
+                            <!-- Refuse Reason -->
+                            <page string="Refuse Reason"
+                                  attrs="{'invisible': ['|', '|', ('state', '=', 'draft'), ('state', '=', 'done'), ('state', '=', 'admin_approve')], 'readonly': ['|', ('state', '=', 'done'), ('state', '=', 'refuse')]}">
+                                <field name="refuse_reason" nolable="1"/>
+                            </page>
+
+                        </notebook>
+                    </sheet>
+
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+        <!--employee request tree view-->
+        <record model="ir.ui.view" id="emp_request_tree_view">
+            <field name="name">Employee Request Tree View</field>
+            <field name="model">employee.request</field>
+            <field name="arch" type="xml">
+                <tree colors="blue:state == 'draft';green:state =='open';red:state == 'refuse';orange:state == 'sm_approve';yellow:state == 'admin_approve';sliver:state =='gm_approve'"
+                      string="Invoice">
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="ordering_date"/>
+                    <field name="schedule_date"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- add action to purchase employee request -->
+        <record model="ir.actions.act_window" id="isky_purchase_employee_request_action">
+            <field name="name">Employee Request</field>
+            <field name="res_model">employee.request</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- add action to purchase employee request Type -->
+        <record model="ir.actions.act_window" id="isky_purchase_employee_request_type_action">
+            <field name="name">Employee Request Type</field>
+            <field name="res_model">employee.request.type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+    </data>
+</odoo>
+
