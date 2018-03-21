@@ -12,7 +12,7 @@ class iSkySaleOrderLine(models.Model):
 
     badge_number = fields.Text(string="Badge Number")
     contact_info = fields.Text(string="Contact Info")
-    special_sale = fields.Boolean(string="Special Sale", related='order_id.special_sale')
+    special_sale = fields.Boolean(string="Special Sale", related='order_id.special_sale', store=True)
 
 
 class iSkySaleOrder(models.Model):
