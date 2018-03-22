@@ -19,7 +19,7 @@ class iSkySaleOrder(models.Model):
     _inherit = "sale.order"
 
     special_sale = fields.Boolean(string="Special Sale")
-    client_po = fields.Char(string="Client's P.O", required=True)
+    client_po = fields.Char(string="Client's P.O")
     project_id = fields.Many2one('project.project')
 
     @api.model
@@ -90,8 +90,12 @@ class iSkySaleOrder(models.Model):
             project = self.project_id
         else:
             # Step#1: create new project with Name of the client and S.O.#
+            if self.client_po:
+                client_po = self.client_po
+            else:
+                client_po = ''
             project = self.env['project.project'].create({
-                'name': self.client_po + "-" + self.name
+                'name': client_po + "-" + self.name
             })
             project.task_ids = False
         # Step#2: For each line in the order lines (having service products) create a task in the above created project

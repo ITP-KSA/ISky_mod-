@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="stock.report_picking">
+
+        <report
+            id="employee_request_picking_report"
+            model="stock.picking"
+            string="Employee Request Picking"
+            report_type="qweb-pdf"
+            name="isky_employee_request.employee_request_picking_report_document"
+            file="isky_employee_request.employee_request_picking_report_document"
+        />
+
+        <template id="employee_request_picking_report_document">
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">
                     <t t-call="web.external_layout">

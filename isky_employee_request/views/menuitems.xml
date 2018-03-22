@@ -4,7 +4,7 @@
 
         <menuitem id="purchase_employee_request_menuitem"
                   name="Employee Request"
-                  parent="purchase.menu_purchase_root"
+                  parent="sale.sale_menu_root"
                   sequence="2"/>
 
 
