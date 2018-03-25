@@ -14,10 +14,18 @@
 
                 <xpath expr="//field[@name='order_line']/tree/field[@name='name']" position="after">
                     <field name="special_sale" invisible="1"/>
-                    <field name="contact_info" attrs="{'invisible':[('special_sale', '=', False)]}"/>
-                    <field name="badge_number" attrs="{'invisible':[('special_sale', '=', False)]}"/>
+                    <field name="contact_info"/>
+                    <field name="badge_number"/>
                 </xpath>
-                
+                <xpath expr="//field[@name='order_line']/form/label[@for='name']" position="before">
+                    <group col="4">
+                        <field name="contact_info"/>
+                        <field name="badge_number"/>
+                        <field name="special_sale" invisible="1"/>
+                    </group>
+
+                </xpath>
+
                 <xpath expr="//field[@name='payment_term_id']" position="after">
                     <field name="client_po" attrs="{'readonly': [('state', 'not in', ['draft','sent'])]}"/>
                 </xpath>
