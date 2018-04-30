@@ -2,6 +2,7 @@
 
 {
     'name': "Employee Request",
+    'version': '0.2',
 
     'summary': """ Employee Request """,
 

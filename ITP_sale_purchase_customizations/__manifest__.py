@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "iSky Sale/Purchase Customizations",
-    'version': '0.1',
+    'version': '0.2',
     'author': "iSky Development",
     'summary': """Sale/Purchase Customizations""",
     'category': '',
