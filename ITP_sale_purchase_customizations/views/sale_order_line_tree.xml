@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="isky_sale_order_lines_tree_view" model="ir.ui.view">
-            <field name="name">isky.sale.order.line.line</field>
+        <record id="sale_order_lines_tree_view" model="ir.ui.view">
+            <field name="name">sale.order.line.line</field>
             <field name="model">sale.order.line</field>
             <field name="arch" type="xml">
                 <tree string="Order Lines">
@@ -26,8 +26,8 @@
             </field>
         </record>
 
-        <record id="isky_sale_order_lines_grouped" model="ir.ui.view">
-            <field name="name">isky.sale.order.line.line.grouped</field>
+        <record id="sale_order_lines_grouped" model="ir.ui.view">
+            <field name="name">sale.order.line.line.grouped</field>
             <field name="model">sale.order.line</field>
             <field name="arch" type="xml">
                 <search string="invoice">
@@ -44,12 +44,12 @@
             </field>
         </record>
 
-        <record model="ir.actions.act_window" id="isky_sale_order_lines_tree_action">
+        <record model="ir.actions.act_window" id="sale_order_lines_tree_action">
             <field name="name">Ordered Products</field>
             <field name="res_model">sale.order.line</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="isky_sale_order_lines_tree_view"/>
+            <field name="view_id" ref="sale_order_lines_tree_view"/>
             <field name="domain">[('product_id','!=',False)]</field>
             <field name="context">{'search_default_group_by_order_id':1}</field>
         </record>

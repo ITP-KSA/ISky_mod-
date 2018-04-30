@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "iSky Sale/Purchase Customizations",
+    'name': "ITP Sale/Purchase Customizations",
     'version': '0.2',
     'author': "ITP",
     'summary': """Sale/Purchase Customizations""",
     'category': '',
     'description': """
-iSky Sale/Purchase Customizations
+ITP Sale/Purchase Customizations
 ====================================
 
 Add customizations to Sale and Purchase cycles.

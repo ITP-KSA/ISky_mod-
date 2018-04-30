@@ -2,8 +2,8 @@
 <odoo>
     <data>
         <!--TODO Stock Move Line-->
-        <record id="isky_stock_move_inherit_tree_view" model="ir.ui.view">
-            <field name="name">isky.stock.move.line.inherit</field>
+        <record id="stock_move_inherit_tree_view" model="ir.ui.view">
+            <field name="name">stock.move.line.inherit</field>
             <field name="model">stock.move.line</field>
             <field name="inherit_id" ref="stock.view_move_line_tree"/>
             <field name="arch" type="xml">
@@ -66,8 +66,8 @@
         </record>
 
         <!--TODO Stock Move-->
-        <record id="isky_stock_move_inherit_tree" model="ir.ui.view">
-            <field name="name">isky.stock.move.inherit</field>
+        <record id="stock_move_inherit_tree" model="ir.ui.view">
+            <field name="name">stock.move.inherit</field>
             <field name="model">stock.move</field>
             <field name="inherit_id" ref="stock.view_move_tree"/>
             <field name="arch" type="xml">
@@ -82,8 +82,8 @@
             </field>
         </record>
 
-        <record id="isky_stock_move_inherit_search_view" model="ir.ui.view">
-            <field name="name">isky.stock.move.inherit</field>
+        <record id="stock_move_inherit_search_view" model="ir.ui.view">
+            <field name="name">stock.move.inherit</field>
             <field name="model">stock.move</field>
             <field name="inherit_id" ref="stock.view_move_search"/>
             <field name="arch" type="xml">
@@ -108,7 +108,7 @@
             <field name="type">ir.actions.act_window</field>
             <field name="view_type">form</field>
             <field name="view_id" ref="stock.view_move_tree"/>
-            <field name="search_view_id" ref="isky_stock_move_inherit_search_view"/>
+            <field name="search_view_id" ref="stock_move_inherit_search_view"/>
             <field name="context">{'search_default_group_by_picking_id':1}</field>
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
