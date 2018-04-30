@@ -11,9 +11,9 @@
             employee can make request for products and direct manager for this employee approve and create purchase requisition and sector manager approve also .
             finally when general manager approve this request, it create internal transfer for all requested products to location of management department.""",
 
-    'author': "Isky Development Team",
+    'author': "ITP",
 
-    'website': "http://iskydev.com/",
+    'website': "www.itp-ksa.com",
 
     'depends': ['base','hr','purchase','purchase_requisition'],
 
