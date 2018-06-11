@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 
-class ProductProduct(models.Model):
+class iSkyProductProduct(models.Model):
     _inherit = 'product.product'
 
     @api.model
@@ -23,7 +23,7 @@ class ProductProduct(models.Model):
         return recs.name_get()
 
 
-class ProductTemplate(models.Model):
+class iSkyProductTemplate(models.Model):
     _inherit = 'product.template'
 
     product_part = fields.Char(string="Part")

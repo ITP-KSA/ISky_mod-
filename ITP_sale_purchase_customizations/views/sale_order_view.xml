@@ -10,7 +10,6 @@
                     <field name="special_sale" attrs="{'readonly': [('state', 'not in', ['draft','sent'])]}"/>
                     <field name="project_id"
                            attrs="{'invisible':[('special_sale', '=', False)], 'readonly': [('state', 'not in', ['draft','sent'])]}"/>
-                    <field name="rfq_num"/>
                 </xpath>
 
                 <xpath expr="//field[@name='order_line']/tree/field[@name='name']" position="after">

@@ -1,8 +1,8 @@
 from odoo import models, fields, api
 
 
-class PurchaseOrderLines(models.Model):
-    _inherit = 'purchase.order.line'
+class iSkySalesOrderLines(models.Model):
+    _inherit = 'sale.order.line'
 
     product_part = fields.Char(string="Part", related="product_id.product_part")
     product_mfr = fields.Char(string="MFR", related="product_id.product_mfr")

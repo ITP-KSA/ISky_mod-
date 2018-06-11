@@ -1,7 +1,7 @@
 from odoo import models, fields, api
 
 
-class StockMove(models.Model):
+class iSkyStockMove(models.Model):
     _inherit = 'stock.move'
 
     product_part = fields.Char(string="Part", related="product_id.product_part")
@@ -12,7 +12,7 @@ class StockMove(models.Model):
     product_samj_code = fields.Char(string="SAMJ Code", related="product_id.product_samj_code")
 
 
-class StockMoveLine(models.Model):
+class iSkyStockMoveLine(models.Model):
     _inherit = 'stock.move.line'
 
     product_part = fields.Char(string="Part", related="product_id.product_part")

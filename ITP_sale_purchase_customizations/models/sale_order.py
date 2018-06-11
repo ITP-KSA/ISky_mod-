@@ -7,7 +7,7 @@ from odoo.exceptions import UserError
 from odoo.tools import float_compare
 
 
-class SaleOrderLine(models.Model):
+class iSkySaleOrderLine(models.Model):
     _inherit = "sale.order.line"
 
     badge_number = fields.Text(string="Badge Number")
@@ -15,21 +15,18 @@ class SaleOrderLine(models.Model):
     special_sale = fields.Boolean(string="Special Sale", related='order_id.special_sale', store=True)
 
 
-class SaleOrder(models.Model):
+class iSkySaleOrder(models.Model):
     _inherit = "sale.order"
 
     special_sale = fields.Boolean(string="Special Sale")
     client_po = fields.Char(string="Client's P.O")
     project_id = fields.Many2one('project.project')
-    rfq_num = fields.Char("RFQ#")
-
-
 
     @api.model
     def create(self, vals):
         if vals['special_sale'] and not vals['project_id']:
             raise ValidationError("Please select project")
-        return super(SaleOrder, self).create(vals)
+        return super(iSkySaleOrder, self).create(vals)
 
     @api.one
     def check_product_qty_available(self):
@@ -87,7 +84,7 @@ class SaleOrder(models.Model):
             # Step#1: Add Client PO as task in the project already selected by the user
             task = self.env['project.task'].sudo().create({
                 'name': self.client_po,
-                'project_id': self.project_id.id,
+                'project_id': self.project_id.id
             })
             parent = task.id
             project = self.project_id
@@ -98,8 +95,7 @@ class SaleOrder(models.Model):
             else:
                 client_po = ''
             project = self.env['project.project'].create({
-                'name': client_po + "-" + self.name,
-                'rfq_num': self.rfq_num,
+                'name': client_po + "-" + self.name
             })
             project.task_ids = False
         # Step#2: For each line in the order lines (having service products) create a task in the above created project
@@ -112,7 +108,6 @@ class SaleOrder(models.Model):
                 'contact_info': line.contact_info,
                 'badge_number': line.badge_number,
                 'special_sale': line.special_sale,
-                'line_item': line.line_item,
             })
 
             task.sale_line_id = line.id,
@@ -121,7 +116,7 @@ class SaleOrder(models.Model):
     def action_confirm(self):
         for order in self:
             order.check_before_confirm()
-            res = super(SaleOrder, order).action_confirm()
+            res = super(iSkySaleOrder, order).action_confirm()
             order.check_product_qty_available()
             if res:
                 for picking in order.picking_ids:
@@ -131,7 +126,8 @@ class SaleOrder(models.Model):
 
     @api.multi
     def _prepare_invoice(self):
-        res = super(SaleOrder, self)._prepare_invoice()
+        res = super(iSkySaleOrder, self)._prepare_invoice()
+
         res['client_po'] = self.client_po
-        res['rfq_num'] = self.rfq_num
+
         return res
