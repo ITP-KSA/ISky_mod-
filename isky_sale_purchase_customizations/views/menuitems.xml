@@ -8,13 +8,13 @@
                   groups="purchase.group_purchase_manager" action="purchase.action_purchase_order_report_all"/>
 
         <menuitem id="sale_order_lines_menu_id" name="Ordered Products" parent="sale.menu_sale_report"
-                  action="sale_order_lines_tree_action"/>
+                  action="isky_sale_order_lines_tree_action"/>
 
-        <menuitem id="purchase_order_line_menu_id" name="Purchased Products" parent="purchase.purchase_report"
-                  action="purchase_order_line_action"/>
+        <menuitem id="isky_purchase_order_line_menu_id" name="Purchased Products" parent="purchase.purchase_report"
+                  action="isky_purchase_order_line_action"/>
 
         <menuitem id="acc_invoice_line_menu_id" name="Invoiced Products" parent="account.menu_finance_reports"
-                  action="account_invoice_line_action"/>
+                  action="isky_account_invoice_line_action"/>
 
 
     </data>
